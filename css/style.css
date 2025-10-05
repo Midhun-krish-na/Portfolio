@@ -1,26 +1,27 @@
-*{
+/* RESET */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #555555;
-    color: #ffffff;
+    background-color: #555;
+    color: #fff;
 }
 
-a{
+a {
     text-decoration: none;
-    color: #ffffff;
+    color: inherit;
 }
 
-section{
-    margin: 20px;
-    height: 100vh;
-}
-
+/* NAVBAR */
 nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
     margin: 20px 40px;
     height: 40px;
     font-size: 25px;
@@ -30,44 +31,104 @@ nav {
     justify-content: space-between;
 }
 
-nav span{
+nav span {
     color: #f2f200;
 }
 
-nav ul{
+nav ul {
+    margin-right: 110px;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
     gap: 50px;
-
 }
 
-.intro{
+/* SECTIONS */
+section {
+    min-height: 100vh; /* better than fixed 100vh with margin */
+}
+
+/* INTRO SECTION */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.intro-container {
+    font-family: fantasy;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.static-txt {
+    font-size: 60px;
+    white-space: nowrap;
+}
+
+.dynamic-typing {
+    font-size: 80px;
+    color: #f2f200;
+    white-space: nowrap;
+    border-right: 4px solid #f2f200; /* typing cursor */
+    animation: blink 0.7s infinite;
+}
+
+/* blinking cursor effect */
+@keyframes blink {
+    0%, 50% { border-color: #f2f200; }
+    51%, 100% { border-color: transparent; }
+}
+
+/* ABOUT SECTION*/
+.about-container{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.left-about-contain{
+    font-size: 25px;
+    width: 35vw;
+    height: 100vh;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.intro-container{
-    font-family: fantasy;
+.left-about-contain ul{
+    list-style: none;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 30px;
 }
 
-.static-txt{
-    color: #ffffff;
-    font-size: 60px;
-    white-space: nowrap;
+.right-about-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    width: 65vw;
+    margin: 30px;
 }
 
-.dynamic-txt{
-    list-style: none;
-    font-size: 80px;
-    color: #f2f200;
-    transition: opacity 0.5s ease;
+.skills{
+    height: 20vh;
+    width: 100vh;
 }
 
-.fade-out{
-    opacity: 0;
+.skills i{
+    color: azure;
+}
+
+@media screen  {
+    
 }
