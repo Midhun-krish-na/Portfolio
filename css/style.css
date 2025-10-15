@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #555;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -126,7 +126,7 @@ section {
 }
 
 .intro-btn button:hover{
-    color: #4c4c4c;
+    color: #000000;
     background-color: #f2f200;
     animation: ease-in;
 }
@@ -168,8 +168,8 @@ section {
 }
 
 .top-about-contain ul{/*top banner*/
-    background-color: #757575;
-    color: #ffffff6f;
+    background-color: #2c2c2c;
+    color: #f2f200a6;
     display: flex;
     min-height: 10vh;
     align-items: center;
@@ -185,7 +185,7 @@ section {
 }
 
 .left-about-contain{/*left side*/
-    background-color: #626262;
+    background-color: #1c1c1c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,7 +219,9 @@ section {
 }
 
 .skills div{
-    background-color: #626262;
+    background-color: transparent;
+    color: #f2f200;
+    border: 4px solid #f2f200;
     width: 30%;
     height: 100%;
     border-radius: 14px;
@@ -227,6 +229,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.skills div:hover{
+    scale: 1.05;
+    background-color: #f2f200;
+    color: #000000;
 }
 
 .skills div ul{
@@ -238,7 +246,7 @@ section {
 
 /*PROJECT SECTION*/
 .project{
-    background-color: #4c4c4c;
+    background-color: #2c2c2c;
 }
 
 
@@ -247,82 +255,64 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #757575;
+    background-color: #2c2c2c;
+    color: #ffffffb0;
 }
 
 .main-contact-container{
     min-height: 80vh;
     width: 64%;
     border-radius: 30px;
-    background-color: #4c4c4c;
+    background-color: #1c1c1c;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: .1em .1em .4em #ffffff;
+    box-shadow: .3em .3em .4em #000000;
 }
 
-.contact-intro{
-    color: #ffffff96;
-    height: 24%;
+.heading-contact{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    padding-top: 0;
+    top: 0;
+    width: 100%;
+    height: 20vh;
+    font-size: 30px;
 }
 
-.contact-intro h2{
-    font-size: 36px;
+.content-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 60vh;
 }
 
-.contact-form{
-    height: 76%;
-}
-
-.contact-form form{
+.content-contact div{
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 460px;
-}
-
-.contact-form form input,
- form textarea{
-    border: none;
-    outline: none;
-    padding: 16px;
-    width: 100%;
-    margin-bottom: 12px;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: #626262;
-    color: #8e8e8e;
-    box-shadow: .1em .1em .4em black;
-}
-
-form textarea{
-    resize: none;
-    height:160px;
-}
-
-form button{
-    color: #757575;
-    background-color: #626262;
-    width: 120px;
-    height: 40px;
-    border: none;
+    justify-content: center;
+    font-size: 60px;
+    background-color: #f2f200;
+    color:#000000;
+    width: 40%;
+    height: 20vh;
     border-radius: 30px;
-    font-size: 24px;
-    box-shadow: .1em .1em .4em black;
 }
 
+.content-contact div:hover{
+    background-color: transparent;
+    border: 4px solid #f2f200;
+    color: #f2f200;
+    scale: 1.05;
+}
 
 /*FOOTER SECTION*/
 footer{
     width: 100%;
     min-height: 30vh;
-    background-color: #626262;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -368,11 +358,16 @@ footer{
 }
 
 .footer-end{
-    background-color: #4c4c4c;
+    background-color: #1c1c1c;
     display: flex;
     align-items: center;
     border-radius: 10vh;
     color: #fff;
     padding: 0 20px;
     height: 4vh;
+}
+
+
+@media screen and (min-width: 512px) {
+    
 }
