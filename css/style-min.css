@@ -1,0 +1,101 @@
+@media screen and (max-width: 512px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navigation ul{
+        display: none;
+    }
+
+    .main-intro-container{
+        flex-direction: column-reverse;
+    }
+
+    .main-intro-container div{
+        height: 50vh;
+        padding: 2em;
+    }
+
+    .intro-contain-left h2{
+        display: flex;
+        justify-content: left;
+        gap: 4px;
+    }
+
+    .static-txt{
+        white-space: wrap;
+    }
+
+    .main-intro-container .intro-contain-right{
+        padding-top: 5em;
+        padding-bottom: 0;
+    }
+
+    .intro-contain-left .intro-btn{
+        padding: 1.5em 0;
+    }
+
+    .sub-about-container{
+        height: 100vh;
+    }
+
+    .sub-about-container div{
+        padding: 2em;
+    }
+
+
+    .top-about-contain {
+        display: none;
+    }
+
+    .left-about-contain ul {
+        font-size: 18px;
+    }
+
+    .right-about-contain{
+        font-size: 18px
+        ;
+    }
+
+    .right-about-contain .about-sub{
+        padding: 0;
+    }
+
+    .about-sub div{
+        width: 100%;
+        padding: 2em 1.5em;
+    }
+
+    .about-sub div ul{
+        padding: 0;
+    }
+
+    .about-sub div ul li{
+        padding: 4px 0;
+    }
+
+    .main-contact-container{
+        width: 80%;
+        height: 90vh;
+        padding: 2em 0;
+    }
+
+    .heading-contact h1{
+        font-size: 36px;
+    }
+
+    .content-contact{
+        padding: 2em;
+    }
+
+    .footer-begin{
+        padding: 2em 1.5em;
+    }
+
+    .footer-end{
+        height: 6vh;
+        font-size: small;
+    }
+}
