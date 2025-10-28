@@ -9,6 +9,16 @@
         display: none;
     }
 
+    .main-intro-container .intro-contain-right{
+        padding-top: 5em;
+        padding-bottom: 0;
+    }
+
+    .intro-contain-right .image{
+        width: 80%;
+        height: 37vh;
+    }
+
     .main-intro-container{
         flex-direction: column-reverse;
     }
@@ -28,10 +38,7 @@
         white-space: wrap;
     }
 
-    .main-intro-container .intro-contain-right{
-        padding-top: 5em;
-        padding-bottom: 0;
-    }
+
 
     .intro-contain-left .intro-btn{
         padding: 1.5em 0;
