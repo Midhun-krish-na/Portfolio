@@ -5,10 +5,18 @@
         box-sizing: border-box;
     }
 
+    .section{
+        height: 100vh;
+    }
+
+
+    /*navigations*/
     .navigation ul{
         display: none;
     }
 
+
+    /*main*/
     .main-intro-container .intro-contain-right{
         padding-top: 5em;
         padding-bottom: 0;
@@ -16,7 +24,7 @@
 
     .intro-contain-right .image{
         width: 80%;
-        height: 37vh;
+        height: 60vw;
     }
 
     .main-intro-container{
@@ -38,12 +46,12 @@
         white-space: wrap;
     }
 
-
-
     .intro-contain-left .intro-btn{
         padding: 1.5em 0;
     }
 
+
+    /*about*/
     .sub-about-container{
         height: 100vh;
     }
@@ -67,38 +75,87 @@
     }
 
     .right-about-contain .about-sub{
-        padding: 0;
-    }
-
-    .about-sub div{
         width: 100%;
-        padding: 2em 1.5em;
+        padding: 1em 1.5em;
     }
 
-    .about-sub div ul{
+    .about-sub ul{
         padding: 0;
     }
 
-    .about-sub div ul li{
+    .about-sub ul li{
         padding: 4px 0;
     }
 
+
+    /*projects*/
+    .main-project-container{
+        justify-content: space-between;
+        height: 125vh;
+    }
+
+    .top-project-contain{
+        height: 12vh;
+    }
+
+    .top-project-contain h1{
+        color: #f2f200;
+    }
+
+    .bottom-project-contain{
+        flex-direction: column;
+        gap: 30px;
+        padding: 1em;
+        height: 90%;
+    }
+
+    .bottom-project-contain .prj-contain{
+        height: 60vh;
+        width: 90%;
+        border-radius: 14px;
+    }
+
+    .bottom-project-contain .bottom-prj-img{
+        padding: 0 1em;
+    }
+
+    .bottom-prj-img h1{
+        padding-bottom: 0;
+    }
+
+
+    /*contact*/
     .main-contact-container{
         width: 80%;
-        height: 90vh;
+        height: 80vh;
         padding: 2em 0;
     }
 
     .heading-contact h1{
-        font-size: 36px;
+        font-size: 1.5em;
+        font-family: serif;
     }
 
     .content-contact{
         padding: 2em;
     }
 
+    .content-contact div{
+        height: 15vh;
+    }
+
+
+    /*footer*/
     .footer-begin{
-        padding: 2em 1.5em;
+        padding: 1.5em;
+    }
+
+    .footer-1{
+        width: 40%;
+    }
+
+    .footer-1 h2{
+        font-size: small;
     }
 
     .footer-end{
